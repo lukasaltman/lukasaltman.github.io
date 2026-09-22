@@ -1,1 +1,72 @@
-# lukasaltman.github.io
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Můj první web</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 40px;
+        }
+
+        h2 {
+            color: navy;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+        }
+
+        a {
+            color: red;
+            font-size: 18px;
+        }
+
+        img {
+            width: 400px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Basketbal</h1>
+
+    <h2>Co je basketbal?</h2>
+
+    <p>Basketbal je týmový sport, ve kterém proti sobě hrají dva týmy.</p>
+
+    <h2>Moje oblíbené týmy</h2>
+
+    <ul>
+        <li>Los Angeles Lakers</li>
+        <li>Chicago Bulls</li>
+        <li>Golden State Warriors</li>
+    </ul>
+
+    <h2>Odkaz</h2>
+
+    <a href="https://www.nba.com">Oficiální stránka NBA</a>
+
+    <h2>Obrázek</h2>
+
+    <img src="https://via.placeholder.com/400" alt="Basketbal">
+
+</body>
+
+</html>
+```
