@@ -81,6 +81,7 @@
     <!-- Patička stránky -->
     <footer id="paticka-stranky">
         <p id="text-paticky">&copy; 2026 Lukáš Altman | Vytvořeno s ♡</p>
+        <p id="zdroj-kod"><small>Design & kód navržen s pomocí <a href="https://gemini.google.com" target="_blank">Gemini AI</a></small></p>
     </footer>
 
 </body>
