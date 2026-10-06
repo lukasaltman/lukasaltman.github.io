@@ -15,7 +15,6 @@
     <!-- Hlavní hlavička s menu -->
     <header id="hlavicka-stranky">
         <a href="https://www.instagram.com/l_.altman/" target="_blank">Lukáš Altman</a>
-    </h1>
         <nav id="navigace">
             <ul>
                 <li><a href="#o-mne">O mně</a></li>
