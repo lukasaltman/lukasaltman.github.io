@@ -14,7 +14,8 @@
 <body>
     <!-- Hlavní hlavička s menu -->
     <header id="hlavicka-stranky">
-        <h1 id="logo">Lukáš Altman</h1>
+        <a href="https://www.instagram.com/l_.altman/" target="_blank">Lukáš Altman</a>
+    </h1>
         <nav id="navigace">
             <ul>
                 <li><a href="#o-mne">O mně</a></li>
@@ -63,6 +64,12 @@
             <h2 id="nadpis-projekty">Moje Projekty</h2>
                 <div id="projekt-1">
                 <h3 id="nazev-projektu-1">Osobní Portfólio</h3>
+            <div id="projekt-1">
+        <h3 id="nazev-projektu-1">
+            <a href="https://lukasaltman.github.io/it-webproject" target="_blank">IT Web Project ✨</a>
+        </h3>
+        <p id="popis-projektu-1">Školní webový projekt vytvořený v rámci studia IT.</p>
+    </div>
             </div>
         </section>
         <!-- Sekce Kontakt -->
