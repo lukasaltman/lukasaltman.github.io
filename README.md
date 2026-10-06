@@ -14,7 +14,7 @@
 <body>
     <!-- Hlavní hlavička s menu -->
     <header id="hlavicka-stranky">
-        <h1 id="logo">Jan Novák</h1>
+        <h1 id="logo">Lukáš Altman</h1>
         <nav id="navigace">
             <ul>
                 <li><a href="#o-mne">O mně</a></li>
@@ -36,7 +36,7 @@
             <h2 id="nadpis-o-mne">O mně</h2>
             <p id="popis-o-mne">
                 Jsem studentem střední školy se zaměřením na informační technologie.
-                Aktuálně se učím základy vývoje webu (HTML, CSS, JavaScript) a základy programování v Pythonu a C#.
+                Aktuálně se učím základy vývoje webu (HTML, CSS, JavaScript) a základy programování v Pythonu.
                 Baví mě tvořit čisté a estetické věci s dobrým uživatelským zážitkem.
             </p>
         </section>
@@ -63,23 +63,18 @@
             <h2 id="nadpis-projekty">Moje Projekty</h2>
                 <div id="projekt-1">
                 <h3 id="nazev-projektu-1">Osobní Portfólio</h3>
-                <p id="popis-projektu-1">Webová stránka navržená v růžovo-bílém stylu jako ukázka znalostí HTML a CSS.</p>
-            </div>
-            <div id="projekt-2">
-                <h3 id="nazev-projektu-2">Kalkulačka v Pythonu</h3>
-                <p id="popis-projektu-2">Konzolová aplikace pro základní matematické operace vytvořená v 3. ročníku.</p>
             </div>
         </section>
         <!-- Sekce Kontakt -->
         <section id="kontakt">
             <h2 id="nadpis-kontakt">Kontaktujte mě</h2>
-            <p id="kontakt-email"><strong>E-mail:</strong> jan.novak@skola.cz</p>
-            <p id="kontakt-github"><strong>GitHub:</strong> github.com/jannovak</p>
+            <p id="kontakt-email"><strong>E-mail:</strong> d24723@oa-opava.cz</p>
+            <p id="kontakt-github"><strong>GitHub:</strong> https://github.com/lukasaltman</p>
         </section>
     </main>
     <!-- Patička stránky -->
     <footer id="paticka-stranky">
-        <p id="text-paticky">&copy; 2026 Jan Novák | Vytvořeno s ♡</p>
+        <p id="text-paticky">&copy; 2026 Lukáš Altman | Vytvořeno s ♡</p>
     </footer>
 
 </body>
