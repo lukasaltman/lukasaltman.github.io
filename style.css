@@ -1,0 +1,168 @@
+/* Plynulé skrolování při kliknutí na menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* RESET okrajů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Základní styly stránky */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #4a1525;
+    background-color: #fff5f8; /* Světťoučká růžovo-bílá */
+}
+
+/* 1. HLAVIČKA A NAVIGACE */
+#hlavicka-stranky {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10%;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.08); /* Jemný růžový stín */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ec4899; /* Sytá růžová */
+}
+
+#navigace ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#navigace ul li a {
+    color: #4a1525;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#navigace ul li a:hover {
+    color: #ec4899; /* Zrůžoví při najetí myší */
+}
+
+/* 2. ÚVODNÍ BANNER (HERO) */
+#uvod {
+    background: linear-gradient(135deg, #fbcfe8 0%, #f472b6 100%); /* Růžový přechod */
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#uvodni-nadpis {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#uvodni-text {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+/* Obal pro sekce */
+#hlavni-obsah {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* 3. SEKOVÉ BLOKY */
+#o-mne, #dovednosti, #projekty, #kontakt {
+    background-color: #ffffff;
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 16px; /* Zaoblené rohy */
+    box-shadow: 0 5px 20px rgba(236, 72, 153, 0.05);
+    border: 1px solid #fce7f3; /* Růžová linka */
+}
+
+#nadpis-o-mne, #nadpis-dovednosti, #nadpis-projekty, #nadpis-kontakt {
+    color: #db2777;
+    font-size: 24px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+/* Ružové podtržení nadpisů */
+#nadpis-o-mne::after, 
+#nadpis-dovednosti::after, 
+#nadpis-projekty::after, 
+#nadpis-kontakt::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #f472b6;
+    border-radius: 2px;
+}
+
+/* 4. DOVEDNOSTI (Karty) */
+#seznam-dovednosti {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#dovednost-html, #dovednost-css, #dovednost-js {
+    background-color: #fff0f6;
+    padding: 20px;
+    flex: 1;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #fbcfe8;
+    transition: transform 0.3s ease;
+}
+
+/* Mírné nadzvednutí karty při najetí myší */
+#dovednost-html:hover, #dovednost-css:hover, #dovednost-js:hover {
+    transform: translateY(-5px);
+}
+
+#dovednost-html h3, #dovednost-css h3, #dovednost-js h3 {
+    color: #ec4899;
+    margin-bottom: 8px;
+}
+
+/* 5. PROJEKTY */
+#projekt-1, #projekt-2 {
+    background-color: #fff0f6;
+    padding: 20px;
+    margin-top: 15px;
+    border-left: 5px solid #ec4899;
+    border-radius: 8px;
+}
+
+#nazev-projektu-1, #nazev-projektu-2 {
+    color: #db2777;
+    margin-bottom: 5px;
+}
+
+/* 6. PATIČKA */
+#paticka-stranky {
+    text-align: center;
+    padding: 25px;
+    background-color: #ffffff;
+    color: #881337;
+    margin-top: 50px;
+    border-top: 1px solid #fce7f3;
+    font-size: 14px;
+}
