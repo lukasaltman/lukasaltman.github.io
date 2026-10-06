@@ -36,6 +36,11 @@ body {
     letter-spacing: -0.5px;
 }
 
+#logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #navigace ul {
     list-style: none;
     display: flex;
@@ -167,6 +172,17 @@ body {
     font-size: 18px;
 }
 
+#projekt-1 h3 a, #projekt-2 h3 a {
+    color: #db2777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#projekt-1 h3 a:hover, #projekt-2 h3 a:hover {
+    color: #ec4899;
+    text-decoration: underline;
+}
+
 #kontakt-email, #kontakt-github {
     font-size: 16px;
     margin-bottom: 10px;
@@ -200,4 +216,76 @@ body {
     border-top: 1px solid #fce7f3;
     font-size: 14px;
     font-weight: 500;
+}
+
+#zdroj-kod {
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+#zdroj-kod a {
+    color: #881337;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#zdroj-kod a:hover {
+    color: #ec4899;
+}
+
+@media (max-width: 768px) {
+    #hlavicka-stranky {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #navigace ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navigace ul li a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    #uvod {
+        padding: 50px 15px;
+    }
+
+    #uvodni-nadpis {
+        font-size: 26px;
+    }
+
+    #uvodni-text {
+        font-size: 16px;
+    }
+
+    #hlavni-obsah {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    #o-mne, #dovednosti, #projekty, #kontakt {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    #seznam-dovednosti {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #dovednost-html, #dovednost-css, #dovednost-js {
+        width: 100%;
+    }
+
+    .tlacitko-kontakt {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
 }
