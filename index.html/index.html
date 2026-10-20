@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio - Student 3. ročníku</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="hlavicka-stranky">
+        <a href="https://www.instagram.com/l_.altman/" target="_blank" rel="noopener noreferrer">Lukáš Altman</a>
+
+        <nav id="navigace">
+            <ul>
+                <li><a href="#o-mne">O mně</a></li>
+                <li><a href="#dovednosti">Dovednosti</a></li>
+                <li><a href="#projekty">Projekty</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <button id="prepinac-motivu" aria-label="Přepnout tmavý nebo světlý režim">🌙</button>
+    </header>
+
+    <section id="uvod">
+        <h1 id="uvodni-nadpis">Ahoj, jsem student IT &amp; vývojář</h1>
+        <p id="uvodni-text">Studuji 3. ročník a baví mě tvořit webové stránky a aplikace.</p>
+    </section>
+
+    <main id="hlavni-obsah">
+
+        <section id="o-mne">
+            <h2 id="nadpis-o-mne">O mně</h2>
+            <p id="popis-o-mne">
+                Jsem studentem střední školy se zaměřením na informační technologie.
+                Aktuálně se učím základy vývoje webu (HTML, CSS, JavaScript) a základy programování v Pythonu.
+                Baví mě tvořit čisté a estetické věci s dobrým uživatelským zážitkem.
+            </p>
+        </section>
+
+        <section id="dovednosti">
+            <h2 id="nadpis-dovednosti">Moje dovednosti</h2>
+
+            <div id="seznam-dovednosti">
+                <div class="dovednost-karta" id="dovednost-html">
+                    <h3>HTML5</h3>
+                    <p>Sémantická struktura a tvorba čistého kódu.</p>
+                </div>
+
+                <div class="dovednost-karta" id="dovednost-css">
+                    <h3>CSS3</h3>
+                    <p>Moderní design, růžové palety, Flexbox a responzivita.</p>
+                </div>
+
+                <div class="dovednost-karta" id="dovednost-js">
+                    <h3>JavaScript</h3>
+                    <p>Základy interaktivity a logika webových aplikací.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projekty">
+            <h2 id="nadpis-projekty">Moje projekty</h2>
+
+            <div id="projekt-1">
+                <h3 id="nazev-projektu-1">
+                    <a href="https://lukasaltman.github.io/it-webproject" target="_blank" rel="noopener noreferrer">IT Web Project</a>
+                </h3>
+                <p id="popis-projektu-1">Školní webový projekt vytvořený v rámci studia IT.</p>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h2 id="nadpis-kontakt">Kontaktujte mě</h2>
+
+            <p id="kontakt-email">
+                <strong>E-mail:</strong>
+                <a href="mailto:d24723@oa-opava.cz">d24723@oa-opava.cz</a>
+            </p>
+
+            <p id="kontakt-github">
+                <strong>GitHub:</strong>
+                <a href="https://github.com/lukasaltman" target="_blank" rel="noopener noreferrer">github.com/lukasaltman</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="paticka-stranky">
+        <p id="text-paticky">&copy; 2026 Lukáš Altman | Vytvořeno s ♡</p>
+        <p id="zdroj-kod">
+            <small>
+                Design &amp; kód navržen s pomocí
+                <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Gemini AI</a>
+            </small>
+        </p>
+    </footer>
+
+    <script>
+        console.log(
+            "%c👋 Ahoj! Koukám, že tě zajímá zdrojový kód. Skvělá práce!",
+            "color: #ff69b4; font-size: 16px; font-weight: bold;"
+        );
+
+        const tlacitkoMotivu = document.getElementById('prepinac-motivu');
+
+        tlacitkoMotivu.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            if (document.body.classList.contains('dark-mode')) {
+                tlacitkoMotivu.textContent = '☀️';
+            } else {
+                tlacitkoMotivu.textContent = '🌙';
+            }
+        });
+    </script>
+
+</body>
+</html>
